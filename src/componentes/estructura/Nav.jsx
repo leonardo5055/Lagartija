@@ -10,7 +10,7 @@ function Nav() {
                 <img className='m-2' src={Logo} width="100px" alt="Lagartija - Logo" />
                 <div className="d-flex flex-column w-50 m-2">
                     <div className='mb-3'>
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
                     </div>
                     <div>
                         <ul className='d-flex list-unstyled flex-row gap-4 justify-content-center'>
