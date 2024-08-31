@@ -1,5 +1,6 @@
 import React from 'react'
 import "./estilo/nav.css";
+import { Link } from 'react-router-dom'; 
 import Logo from "../../img/logo-lagartija.png";
 import Carrito from "../../img/carrito-de-compras.png";
 
@@ -23,8 +24,8 @@ function Nav() {
                 </div>
                 <div className='m-2'>
                     <ul className='d-flex list-unstyled flex-row gap-2'>
-                        <li><a href="#">Crear tu cuenta</a></li>
-                        <li><a href="#">Ingresar</a></li>
+                    <li><Link to="/registrarse">Crear tu cuenta</Link></li>
+                    <li><Link to="/acceso">Ingresar</Link></li>
                         <li><a href="#">Mis compras</a></li>
                         <li><img src={Carrito} width="25px" alt="carrito" /></li>
                     </ul>

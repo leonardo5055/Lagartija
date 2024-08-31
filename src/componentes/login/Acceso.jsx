@@ -1,8 +1,11 @@
 import React from 'react'
 import Footer from '../estructura/Footer'
 import Nav from '../estructura/Nav'
+import { Link } from 'react-router-dom'; 
 import Usuario from "../../img/usuario.png";
-import "./estilo/acceso.css"
+import "./estilo/Acceso.css"
+
+
 
 function Acceso() {
     return (
@@ -26,7 +29,7 @@ function Acceso() {
                     <div className='row row-cols-2'>
                         <div className='col'>
                             <button className='button1 mb-2 px-4 py-2 rounded-pill w-100 text-light border-0'>Continuar</button>
-                            <button className='button3 px-4 py-2 rounded-pill w-100 text-light border-0'>Olvide mi contraseña</button>
+                            <Link to="/RecuperarContraseña" className="text-primary">Olvidé mi contraseña</Link>
                         </div>
                         <div className='col'>
                             <button className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
