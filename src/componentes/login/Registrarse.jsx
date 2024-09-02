@@ -1,7 +1,7 @@
-import React from 'react'
-import Footer from '../estructura/Footer'
-import Nav from '../estructura/Nav'
-import "./estilo/registrarse.css"
+import React from 'react';
+import Footer from '../estructura/Footer';
+import Nav from '../estructura/Nav';
+import "./estilo/registrarse.css";
 
 function Registrarse() {
     return (
@@ -12,36 +12,36 @@ function Registrarse() {
                     <h3>Registrarse</h3>
                     <br />
                     <div className="mb-3">
-                        <label for="correo" className="form-label">Correo electronico</label>
+                        <label for="correo" className="form-label">Correo electrónico</label>
                         <input type="email" className="form-control " id="correo" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Usuario</label>
-                        <input type="text" className="form-control" id="contra" placeholder="" />
+                        <label for="usuario" className="form-label">Usuario</label>
+                        <input type="text" className="form-control" id="usuario" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Contraseña</label>
-                        <input type="password" className="form-control" id="contra" placeholder="" />
+                        <label for="contrasena" className="form-label">Contrasena</label>
+                        <input type="password" className="form-control" id="contrasena" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Confirmar contraseña</label>
-                        <input type="password" className="form-control" id="contra" placeholder="" />
+                        <label for="confirmarContrasena" className="form-label">Confirmar contrasena</label>
+                        <input type="password" className="form-control" id="confirmarContrasena" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Numero de telefono</label>
-                        <input type="numer" className="form-control" id="contraCon" placeholder="" />
+                        <label for="telefono" className="form-label">Número de teléfono</label>
+                        <input type="numer" className="form-control" id="telefono" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Direccion</label>
-                        <input type="text" className="form-control" id="contra" placeholder="" />
+                        <label for="direccion" className="form-label">Dirección</label>
+                        <input type="text" className="form-control" id="direccion" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Localidad</label>
-                        <input type="text" className="form-control" id="contra" placeholder="" />
+                        <label for="localidad" className="form-label">Localidad</label>
+                        <input type="text" className="form-control" id="localidad" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contra" className="form-label">Codigo postal</label>
-                        <input type="number" className="form-control" id="contra" placeholder="" />
+                        <label for="codigoPostal" className="form-label">Código postal</label>
+                        <input type="number" className="form-control" id="codigoPostal" placeholder="" />
                     </div>
                     <div className='col'>
                         <button className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
@@ -50,7 +50,7 @@ function Registrarse() {
             </div>
             <Footer />
         </div>
-    )
+    );
 }
 
-export default Registrarse
+export default Registrarse;

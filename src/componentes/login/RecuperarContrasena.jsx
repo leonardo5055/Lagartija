@@ -1,18 +1,36 @@
 import React, { useState } from 'react';
 import Footer from '../estructura/Footer';
 import Nav from '../estructura/Nav';
-import './estilo/RecuperarContraseña.css';
+import './estilo/RecuperarContrasena.css';
 
-function RecuperarContraseña() {
+function RecuperarContrasena() {
   const [correo, setCorreo] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const [error, setError] = useState('');
 
-  const manejarEnvio = (e) => {
-    e.preventDefault(); 
-    // Aquí deberías agregar la lógica para enviar la solicitud de recuperación de contraseña al backend
+  const manejarEnvio = async (e) => {
+    e.preventDefault();
+    setMensaje('');
+    setError('');
 
-    setMensaje(`Se ha enviado correctamente el enlace de recuperación al ${correo}`);
-  }
+    try {
+      const response = await fetch('http://localhost:3000/RecuperarContrasena', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ correo })
+      });
+
+      if (response.ok) {
+        setMensaje('Se ha enviado un enlace de recuperación a tu correo electrónico.');
+      } else {
+        setError('No se encontró una cuenta con ese correo electrónico.');
+      }
+    } catch (error) {
+      setError('Ocurrió un error al procesar tu solicitud. Por favor, inténtalo de nuevo más tarde.');
+    }
+  };
 
   return (
     <div>
@@ -36,8 +54,9 @@ function RecuperarContraseña() {
             <button type="submit" className="btn btn-primary btn-enviar">Enviar enlace de acceso</button>
           </form>
           {mensaje && <p className="mensaje mt-3">{mensaje}</p>}
+          {error && <p className="text-danger mt-3">{error}</p>}
           <hr className='separador' />
-          <a href="/crear-cuenta" className='crear-cuenta-nueva'>Crear Cuenta Nueva</a>
+          <a href="/Registrarse" className='crear-cuenta-nueva'>Crear Cuenta Nueva</a>
         </div>
       </div>
       <Footer />
@@ -45,4 +64,4 @@ function RecuperarContraseña() {
   );
 }
 
-export default RecuperarContraseña;
+export default RecuperarContrasena;
