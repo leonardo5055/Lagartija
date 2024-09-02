@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../estructura/Footer';
 import Nav from '../estructura/Nav';
 import './estilo/RecuperarContrasena.css';
+import CandadoIC from "../../img/candado-cerrado.png"
 
 function RecuperarContrasena() {
   const [correo, setCorreo] = useState("");
@@ -35,14 +36,13 @@ function RecuperarContrasena() {
   return (
     <div>
       <Nav />
-      <div className='recupererar-contra-container'>
-        <div className='recuperar-contra-card'>
-          <div className='icono-de-candado'>
-            <i className='fas fa-lock'></i>
-          </div>
+      <div className='container d-flex align-items-center justify-content-center text-center my-5'>
+        <div className='recuperar-contra-card my-5'>
+          <img className='m-2' src={CandadoIC} width="100px" alt="Candado - icono" />
           <p className='desc'>
-            ¿Tienes problemas para entrar? Introduce tu correo electrónico, número de teléfono o nombre de usuario y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.
+            ¿Tienes problemas para entrar?
           </p>
+          <p>Introduce tu correo electrónico, número de teléfono o nombre de usuario y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</p>
           <form onSubmit={manejarEnvio}>
             <input
               type="text"
@@ -51,12 +51,13 @@ function RecuperarContrasena() {
               value={correo}
               onChange={(e) => setCorreo(e.target.value)}
             />
-            <button type="submit" className="btn btn-primary btn-enviar">Enviar enlace de acceso</button>
+            <br />
+            <button type="submit" className="btn-enviar text-light rounded-5">Enviar enlace de acceso</button>
           </form>
           {mensaje && <p className="mensaje mt-3">{mensaje}</p>}
           {error && <p className="text-danger mt-3">{error}</p>}
-          <hr className='separador' />
-          <a href="/Registrarse" className='crear-cuenta-nueva'>Crear Cuenta Nueva</a>
+          <hr/>
+          <a href="/Registrarse" className='btn-crear text-light rounded-5'>Crear Cuenta Nueva</a>
         </div>
       </div>
       <Footer />

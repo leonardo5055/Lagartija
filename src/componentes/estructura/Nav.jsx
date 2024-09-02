@@ -8,7 +8,10 @@ function Nav() {
     return (
         <header>
             <nav className='h-auto d-flex justify-content-between align-items-center text-light'>
-                <img className='m-2' src={Logo} width="100px" alt="Lagartija - Logo" />
+                <Link to="/">
+                    <img className='m-2' src={Logo} width="100px" alt="Lagartija - Logo" />
+                </Link>
+                
                 <div className="d-flex flex-column w-50 m-2">
                     <div className='mb-3'>
                         <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>

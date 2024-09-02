@@ -20,11 +20,11 @@ function Registrarse() {
                         <input type="text" className="form-control" id="usuario" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="contrasena" className="form-label">Contrasena</label>
+                        <label for="contrasena" className="form-label">Contraseña</label>
                         <input type="password" className="form-control" id="contrasena" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label for="confirmarContrasena" className="form-label">Confirmar contrasena</label>
+                        <label for="confirmarContrasena" className="form-label">Confirmar contraseña</label>
                         <input type="password" className="form-control" id="confirmarContrasena" placeholder="" />
                     </div>
                     <div className="mb-3">
