@@ -4,6 +4,7 @@ import Acceso from './componentes/login/Acceso';
 import Registrarse from './componentes/login/Registrarse';
 import Home from './componentes/paginas/Home';
 import RecuperarContrasena from './componentes/login/RecuperarContrasena';
+import RemarasCat from './componentes/paginas/RemarasCat';
 
 function App() {
   return (
