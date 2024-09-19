@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../estructura/Footer'
-import Nav from '../estructura/Nav'
 import BannerZapatillas from "../../img/banner-zapatillas.png";
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import "./estilos/home.css"
@@ -11,18 +9,16 @@ import {
     CardDescription,
     CardContent,
     Card,
-    Icon,
     Image,
 } from 'semantic-ui-react'
 
 function PantalonesCat() {
     return (
         <div>
-            <Nav />
             <div>
                 <img src={BannerZapatillas} width={"100%"} height={"300"} alt="banner" />
             </div>
-            <h1 className='text-center'>Pantalones</h1>
+            <h1 className='text-center'>zapatillas</h1>
             <div className='d-flex gap-5 justify-content-center'>
                 <Card>
                     <Image src={Sanlorenzo} wrapped ui={false} />
@@ -198,7 +194,6 @@ function PantalonesCat() {
                     </CardContent>
                 </Card>
             </div>
-            <Footer />
         </div>
     )
 }

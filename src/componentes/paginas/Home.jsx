@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../estructura/Footer'
-import Nav from '../estructura/Nav'
 import BannerGeneral from "../../img/banner-general.png";
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import Remera from "../../img/remera1.jpg";
@@ -13,14 +11,12 @@ import {
     CardDescription,
     CardContent,
     Card,
-    Icon,
     Image,
 } from 'semantic-ui-react'
 
 function Home() {
     return (
         <div>
-            <Nav />
             <div>
                 <img src={BannerGeneral} width={"100%"} height={"300"} alt="banner" />
             </div>
@@ -43,7 +39,7 @@ function Home() {
                     </CardContent>
                 </Card>
                 <Card>
-                    <Image src={Pantalon} wrapped ui={false} className="w-50" />
+                    <Image src={Pantalon} wrapped ui={false}  width="250px"/>
                     <CardContent>
                         <CardHeader>Remera San Lorenzo</CardHeader>
                         <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
@@ -203,7 +199,6 @@ function Home() {
                     </CardContent>
                 </Card>
             </div>
-            <Footer />
         </div>
     )
 }

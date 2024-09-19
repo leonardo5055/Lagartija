@@ -6,7 +6,6 @@ import "./estilo/registrarse.css";
 function Registrarse() {
     return (
         <div>
-            <Nav />
             <div className='container d-flex align-items-center justify-content-center gap-5 my-5 text-center'>
                 <form className='w-100 m-5' action="">
                     <h3>Registrarse</h3>
@@ -48,7 +47,6 @@ function Registrarse() {
                     </div>
                 </form>
             </div>
-            <Footer />
         </div>
     );
 }

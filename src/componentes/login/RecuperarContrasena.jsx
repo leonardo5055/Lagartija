@@ -35,7 +35,6 @@ function RecuperarContrasena() {
 
   return (
     <div>
-      <Nav />
       <div className='container d-flex align-items-center justify-content-center text-center my-5'>
         <div className='recuperar-contra-card my-5'>
           <img className='m-2' src={CandadoIC} width="100px" alt="Candado - icono" />
@@ -60,7 +59,6 @@ function RecuperarContrasena() {
           <a href="/Registrarse" className='btn-crear text-light rounded-5'>Crear Cuenta Nueva</a>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

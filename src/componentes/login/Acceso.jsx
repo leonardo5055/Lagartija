@@ -8,7 +8,6 @@ import "./estilo/Acceso.css";
 function Acceso() {
     return (
         <div>
-            <Nav />
             <div className='d-flex align-items-center justify-content-center gap-5 my-5'>
                 <div>
                     <img src={Usuario} width="150px" alt="usuario" />
@@ -35,7 +34,6 @@ function Acceso() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

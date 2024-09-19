@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../estructura/Footer'
-import Nav from '../estructura/Nav'
 import BannerGeneral from "../../img/banner-general.png";
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import "./estilos/home.css"
@@ -11,14 +9,12 @@ import {
     CardDescription,
     CardContent,
     Card,
-    Icon,
     Image,
 } from 'semantic-ui-react'
 
 function RemarasCat() {
     return (
         <div>
-            <Nav />
             <div>
                 <img src={BannerGeneral} width={"100%"} height={"300"} alt="banner" />
             </div>
@@ -198,7 +194,6 @@ function RemarasCat() {
                     </CardContent>
                 </Card>
             </div>
-            <Footer />
         </div>
     )
 }

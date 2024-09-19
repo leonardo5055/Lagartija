@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../estructura/Footer'
-import Nav from '../estructura/Nav'
 import BannerPantalones from "../../img/banner-pantalones.png";
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import "./estilos/home.css"
@@ -11,14 +9,12 @@ import {
     CardDescription,
     CardContent,
     Card,
-    Icon,
     Image,
 } from 'semantic-ui-react'
 
 function PantalonesCat() {
     return (
         <div>
-            <Nav />
             <div>
                 <img src={BannerPantalones} width={"100%"} height={"300"} alt="banner" />
             </div>
@@ -198,7 +194,6 @@ function PantalonesCat() {
                     </CardContent>
                 </Card>
             </div>
-            <Footer />
         </div>
     )
 }
