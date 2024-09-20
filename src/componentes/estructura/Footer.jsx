@@ -1,6 +1,7 @@
 import React from 'react'
 import "./estilo/footer.css"
 import Logo from "../../img/logo-lagartija.png";
+import { Link } from 'react-router-dom'; 
 
 function Footer() {
   return (
@@ -12,10 +13,10 @@ function Footer() {
         <div>
           <h5>Tienda</h5>
           <ul>
-            <li><a href="#">Remeras</a></li>
-            <li><a href="#">Pantalones</a></li>
-            <li><a href="#">Zapatillas</a></li>
-            <li><a href="#">Buzos</a></li>
+            <li><Link to="/remeras">Remeras</Link></li>
+            <li><Link to="/buzos">Buzos</Link></li>
+            <li><Link to="/pantalones">Pantalones</Link></li>
+            <li><Link to="/zapatillas">Zapatillas</Link></li>
           </ul>
         </div>
         <div>
@@ -29,7 +30,7 @@ function Footer() {
       </div>
       <div>
         <h5 className='text-center'>Suscripcion a la tienda</h5>
-        <input className="form-control me-2 my-2" type="suscrib" placeholder="Email" aria-label="suscrib"/>
+        <input className="form-control me-2 my-2" type="suscrib" placeholder="Email" aria-label="suscrib" />
         <button className='px-4 py-2 rounded-pill w-100 text-light border-0'>Suscribete</button>
       </div>
     </footer>

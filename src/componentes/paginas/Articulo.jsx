@@ -1,5 +1,6 @@
 import React from 'react';
 import Sanlorenzo from "../../img/sanlorenzo.png";
+import "./estilos/articulo.css"
 
 import {
     CardMeta,
@@ -13,7 +14,7 @@ import {
 function Articulo() {
     return (
         <div>
-            <div className='d-flex justify-content-center align-items-center'>
+            <div className='d-flex justify-content-center align-items-center m-5'>
                 <div className='d-flex gap-4 flex-column'>
                     <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
                     <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
@@ -25,12 +26,12 @@ function Articulo() {
                 </div>
                 <div className='d-flex flex-column gap-3'>
                     <h1>Remera San Lorenzo</h1>
-                    <p>20.000</p>
-                    <p>Metodos de pago</p>
+                    <p className='fs-2'>$20.000</p>
+                    <p className='text-naranja'>Metodos de pago</p>
                     <div className='d-flex gap-2'>
-                        <img className='border border-2 border-black' src={Sanlorenzo} width="50" />
-                        <img className='border border-2 border-black' src={Sanlorenzo} width="50" />
-                        <img className='border border-2 border-black' src={Sanlorenzo} width="50" />
+                        <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
+                        <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
+                        <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
                     </div>
                     <p>Talles</p>
                     <div className='d-flex gap-2'>
@@ -51,11 +52,46 @@ function Articulo() {
                 </div>
             </div>
             <div className='m-5'>
-                <h1>Descripcion</h1>
+                <h1 className='text-naranja'>Descripción del producto:</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iste vitae veritatis accusamus! Esse odit quod aliquam molestiae commodi, perferendis rerum officia magnam nulla. Ab quia ipsa corporis sapiente soluta!</p>
             </div>
+            <hr />
             <div>
-                <h1 className='text-center'>Tambien te puede interesar</h1>
+                <h1 className='text-center text-naranja'>También te puede interesar</h1>
+                <div className='d-flex gap-5 justify-content-center m-5'>
+                    <Card>
+                        <Image src={Sanlorenzo} wrapped ui={false} />
+                        <CardContent>
+                            <CardHeader>Remera San Lorenzo</CardHeader>
+                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
+                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <Image src={Sanlorenzo} wrapped ui={false} />
+                        <CardContent>
+                            <CardHeader>Remera San Lorenzo</CardHeader>
+                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
+                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <Image src={Sanlorenzo} wrapped ui={false} />
+                        <CardContent>
+                            <CardHeader>Remera San Lorenzo</CardHeader>
+                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
+                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <Image src={Sanlorenzo} wrapped ui={false} />
+                        <CardContent>
+                            <CardHeader>Remera San Lorenzo</CardHeader>
+                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
+                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
         </div>
     );
