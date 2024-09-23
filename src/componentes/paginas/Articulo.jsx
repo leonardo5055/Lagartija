@@ -28,6 +28,7 @@ function Articulo() {
                     <h1>Remera San Lorenzo</h1>
                     <p className='fs-2'>$20.000</p>
                     <p className='text-naranja'>Metodos de pago</p>
+                    <p>Colores:</p>
                     <div className='d-flex gap-2'>
                         <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
                         <img className='border border-2 border-black' src={Sanlorenzo} width="70" />

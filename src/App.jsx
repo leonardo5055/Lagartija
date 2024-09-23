@@ -11,6 +11,7 @@ import Zapatillas from './componentes/paginas/Zapatillas.js';
 import Nav from './componentes/estructura/Nav';
 import Footer from './componentes/estructura/Footer';
 import Articulo from './componentes/paginas/Articulo';
+import Carrito from "./componentes/paginas/Carrito";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/articulo" element={<Articulo />} />
         <Route path="/acceso" element={<Acceso />} />
         <Route path="/registrarse" element={<Registrarse />} />
-        <Route path="/compras" element={<Registrarse />} />
+        <Route path="/carrito" element={<Carrito />} />
         <Route path="/recuperar-contrasena" element={<RecuperarContrasena />} />
         <Route path="/remeras" element={<RemarasCat />} />
         <Route path="/pantalones" element={<PantalonesCat />} />
