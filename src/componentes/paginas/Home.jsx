@@ -5,14 +5,7 @@ import Remera from "../../img/remera1.jpg";
 import Pantalon from "../../img/pantalon1.png"
 import "./estilos/home.css"
 
-import {
-    CardMeta,
-    CardHeader,
-    CardDescription,
-    CardContent,
-    Card,
-    Image,
-} from 'semantic-ui-react'
+import CardDescuento from '../estructura/CardDescuento';
 
 function Home() {
     return (
@@ -20,187 +13,49 @@ function Home() {
             <div>
                 <img src={BannerGeneral} width={"100%"} height={"300"} alt="banner" />
             </div>
+            <br />
             <h1 className='text-center'>Ofertas</h1>
             <div className='d-flex gap-5 justify-content-center'>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Remera} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera Mars</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$20.000</span></CardMeta>
-                        <CardDescription>$15.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Pantalon} wrapped ui={false}  width="250px"/>
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Remera} nombre={"Remera Mars"} precioOriginal={"$20.000"} precioDescuento={"$15.000"} />
+                <CardDescuento imagen={Pantalon} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
             </div>
             <hr />
             <h1 className='text-center'>Remeras más vendidas</h1>
             <div className='d-flex gap-5 justify-content-center'>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+
             </div>
             <hr />
             <h1 className='text-center'>Pantalones más vendidos</h1>
             <div className='d-flex gap-5 justify-content-center'>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
             </div>
             <hr />
             <h1 className='text-center'>Buzos más vendidos</h1>
             <div className='d-flex gap-5 justify-content-center'>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
             </div>
             <hr />
             <h1 className='text-center'>Zapatillas más vendidas</h1>
             <div className='d-flex gap-5 justify-content-center'>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <Image src={Sanlorenzo} wrapped ui={false} />
-                    <CardContent>
-                        <CardHeader>Remera San Lorenzo</CardHeader>
-                        <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                        <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                    </CardContent>
-                </Card>
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
             </div>
         </div>
     )
 }
 
-export default Home
+export default Home;

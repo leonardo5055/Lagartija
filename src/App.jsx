@@ -21,6 +21,7 @@ function App() {
         <Route path="/articulo" element={<Articulo />} />
         <Route path="/acceso" element={<Acceso />} />
         <Route path="/registrarse" element={<Registrarse />} />
+        <Route path="/compras" element={<Registrarse />} />
         <Route path="/recuperar-contrasena" element={<RecuperarContrasena />} />
         <Route path="/remeras" element={<RemarasCat />} />
         <Route path="/pantalones" element={<PantalonesCat />} />
