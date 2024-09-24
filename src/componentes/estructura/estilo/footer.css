@@ -1,6 +1,30 @@
 footer{
     background-color: #264653;
 }
-button{
+.btnRojo{
     background-color: #E76F51;
+}
+
+.btnVerde{
+    background-color: #2A9D8F;
+
+}
+
+.btnAmarillo{
+    background-color: #E9C46A;
+}
+
+.btnAzulOscuro{
+    background-color: #264653;
+}
+
+.linea{
+    background-color: #E76F51;
+    height: 5px;
+    border: none;
+    opacity: 1;
+}
+
+.cajaFor{
+    background-color: #D9D9D9;
 }

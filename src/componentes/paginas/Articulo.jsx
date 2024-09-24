@@ -26,7 +26,7 @@ function Articulo() {
                 </div>
                 <div className='d-flex flex-column gap-3'>
                     <h1>Remera San Lorenzo</h1>
-                    <p className='fs-2'>$20.000</p>
+                    <p className='fs-2'>$60.000</p>
                     <p className='text-naranja'>Metodos de pago</p>
                     <p>Colores:</p>
                     <div className='d-flex gap-2'>
@@ -36,20 +36,20 @@ function Articulo() {
                     </div>
                     <p>Talles</p>
                     <div className='d-flex gap-2'>
-                        <button className='px-4 py-2 rounded-pill text-light border-0'>L</button>
-                        <button className='px-4 py-2 rounded-pill text-light border-0'>XL</button>
-                        <button className='px-4 py-2 rounded-pill text-light border-0'>XXL</button>
+                        <button className='px-4 py-2 rounded-pill text-light border-0 btnRojo'>L</button>
+                        <button className='px-4 py-2 rounded-pill text-light border-0 btnRojo'>XL</button>
+                        <button className='px-4 py-2 rounded-pill text-light border-0 btnRojo'>XXL</button>
                     </div>
                     <div className='d-flex align-items-center gap-5'>
                         <p>Cantidad</p>
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                            <button type="button" class="btn btn-primary">-</button>
-                            <button type="button" class="btn btn-primary">1</button>
-                            <button type="button" class="btn btn-primary">+</button>
+                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">-</button>
+                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">1</button>
+                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">+</button>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary">Comprar ahora</button>
-                    <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                    <button type="button" class="px-4 py-2 border-0 rounded-pill btnAzulOscuro text-light">Comprar ahora</button>
+                    <button type="button" class="px-4 py-2 border-0 rounded-pill btnAmarillo text-light">Añadir al carrito</button>
                 </div>
             </div>
             <div className='m-5'>

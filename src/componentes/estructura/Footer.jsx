@@ -31,7 +31,7 @@ function Footer() {
       <div>
         <h5 className='text-center'>Suscripcion a la tienda</h5>
         <input className="form-control me-2 my-2" type="suscrib" placeholder="Email" aria-label="suscrib" />
-        <button className='px-4 py-2 rounded-pill w-100 text-light border-0'>Suscribete</button>
+        <button className='px-4 py-2 rounded-pill w-100 text-light border-0 btnRojo'>Suscribete</button>
       </div>
     </footer>
   )

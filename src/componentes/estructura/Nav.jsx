@@ -30,7 +30,7 @@ function Nav() {
                         <li><Link to="/registrarse">Crear tu cuenta</Link></li>
                         <li><Link to="/acceso">Ingresar</Link></li>
                         <li><Link href="/compras">Mis compras</Link></li>
-                        <li><img src={Carrito} width="25px" alt="carrito" /></li>
+                        <li><Link to="/carrito"><img src={Carrito} width="25px" alt="carrito" /></Link></li>
                     </ul>
                 </div>
             </nav>

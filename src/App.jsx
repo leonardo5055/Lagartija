@@ -12,6 +12,7 @@ import Nav from './componentes/estructura/Nav';
 import Footer from './componentes/estructura/Footer';
 import Articulo from './componentes/paginas/Articulo';
 import Carrito from "./componentes/paginas/Carrito";
+import FinalizarCompra from './componentes/paginas/FinalizarCompra.jsx';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/acceso" element={<Acceso />} />
         <Route path="/registrarse" element={<Registrarse />} />
         <Route path="/carrito" element={<Carrito />} />
+        <Route path="/finalizar-compra" element={<FinalizarCompra />} />
         <Route path="/recuperar-contrasena" element={<RecuperarContrasena />} />
         <Route path="/remeras" element={<RemarasCat />} />
         <Route path="/pantalones" element={<PantalonesCat />} />
