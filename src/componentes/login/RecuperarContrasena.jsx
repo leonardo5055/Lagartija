@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Footer from '../estructura/Footer';
-import Nav from '../estructura/Nav';
 import './estilo/RecuperarContrasena.css';
 import CandadoIC from "../../img/candado-cerrado.png"
 

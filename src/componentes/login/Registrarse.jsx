@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../estructura/Footer';
 import Nav from '../estructura/Nav';
 import "./estilo/registrarse.css";
+import { Link } from 'react-router-dom';
 
 function Registrarse() {
     return (
@@ -43,7 +44,9 @@ function Registrarse() {
                         <input type="number" className="form-control" id="codigoPostal" placeholder="" />
                     </div>
                     <div className='col'>
-                        <button className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
+                        <Link to="/">
+                            <button className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
+                        </Link>
                     </div>
                 </form>
             </div>

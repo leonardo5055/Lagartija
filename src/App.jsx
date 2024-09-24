@@ -13,6 +13,9 @@ import Footer from './componentes/estructura/Footer';
 import Articulo from './componentes/paginas/Articulo';
 import Carrito from "./componentes/paginas/Carrito";
 import FinalizarCompra from './componentes/paginas/FinalizarCompra.jsx';
+import Perfil from './componentes/paginas/Perfil.jsx';
+import Pedidos from './componentes/paginas/Pedidos.jsx';
+import DevolverProductos from "./componentes/paginas/DevolverProductos.jsx";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
         <Route path="/pantalones" element={<PantalonesCat />} />
         <Route path="/buzos" element={<BuzosCat />} />
         <Route path="/zapatillas" element={<Zapatillas />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/pedidos" element={<Pedidos />} />
+        <Route path="/devolver-productos" element={<DevolverProductos />} />
       </Routes>
       <Footer />
     </Router>

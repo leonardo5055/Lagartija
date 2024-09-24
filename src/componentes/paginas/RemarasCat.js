@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerGeneral from "../../img/banner-general.png";
+import BannerGeneral from "../../img/banner-remeras.png";
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import CardDescuento from '../estructura/CardDescuento';
 import "./estilos/home.css"
