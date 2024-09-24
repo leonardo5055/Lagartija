@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Footer from '../estructura/Footer';
-import Nav from '../estructura/Nav';
 import './estilo/RecuperarContrasena.css';
 import CandadoIC from "../../img/candado-cerrado.png"
 
@@ -55,7 +53,7 @@ function RecuperarContrasena() {
           </form>
           {mensaje && <p className="mensaje mt-3">{mensaje}</p>}
           {error && <p className="text-danger mt-3">{error}</p>}
-          <hr/>
+          <hr />
           <a href="/Registrarse" className='btn-crear text-light rounded-5'>Crear Cuenta Nueva</a>
         </div>
       </div>
