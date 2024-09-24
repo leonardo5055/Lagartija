@@ -10,6 +10,7 @@ import {
     Card,
     Image,
 } from 'semantic-ui-react'
+import CardDescuento from '../estructura/CardDescuento';
 
 function Articulo() {
     return (
@@ -60,38 +61,10 @@ function Articulo() {
             <div>
                 <h1 className='text-center text-naranja'>También te puede interesar</h1>
                 <div className='d-flex gap-5 justify-content-center m-5'>
-                    <Card>
-                        <Image src={Sanlorenzo} wrapped ui={false} />
-                        <CardContent>
-                            <CardHeader>Remera San Lorenzo</CardHeader>
-                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <Image src={Sanlorenzo} wrapped ui={false} />
-                        <CardContent>
-                            <CardHeader>Remera San Lorenzo</CardHeader>
-                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <Image src={Sanlorenzo} wrapped ui={false} />
-                        <CardContent>
-                            <CardHeader>Remera San Lorenzo</CardHeader>
-                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <Image src={Sanlorenzo} wrapped ui={false} />
-                        <CardContent>
-                            <CardHeader>Remera San Lorenzo</CardHeader>
-                            <CardMeta><span className='date text-decoration-line-through'>$90.000</span></CardMeta>
-                            <CardDescription>$60.000 <span className='descuento'>- Descuento</span></CardDescription>
-                        </CardContent>
-                    </Card>
+                    <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                    <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                    <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
+                    <CardDescuento imagen={Sanlorenzo} nombre={"Remera San Lorenzo"} precioOriginal={"$90.000"} precioDescuento={"$60.000"} />
                 </div>
             </div>
         </div>

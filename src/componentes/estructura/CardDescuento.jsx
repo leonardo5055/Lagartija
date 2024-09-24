@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardMeta, Image } from 
 
 function CardDescuento({ imagen, nombre, precioOriginal, precioDescuento }) {
     return (
-        <Card>
+        <Card role="button" onClick={()=> window.location.href = "./articulo"}>
             <Image src={imagen} width="250px" wrapped ui={false} />
             <CardContent>
                 <div className='mx-3 mb-3'>
