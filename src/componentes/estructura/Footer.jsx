@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./estilo/footer.css"
 import Logo from "../../img/logo-lagartija.png";
-import { Link } from 'react-router-dom'; 
+import { Link, useLocation } from 'react-router-dom'; 
 
 function Footer() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <footer className='d-flex justify-content-between align-items-center text-light px-5'>
       <div>

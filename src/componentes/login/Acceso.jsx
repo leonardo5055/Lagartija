@@ -25,11 +25,19 @@ function Acceso() {
                     </form>
                     <div className='row row-cols-2'>
                         <div className='col'>
-                            <button className='button1 mb-2 px-4 py-2 rounded-pill w-100 text-light border-0'>Continuar</button>
+                            <Link to="/">
+                                <button className='button1 mb-2 px-4 py-2 rounded-pill w-100 text-light border-0'>Continuar</button>
+                            </Link>
                             <Link to="/recuperar-contrasena" className="text-primary">Olvidé mi contrasena</Link>
                         </div>
                         <div className='col'>
+<<<<<<< HEAD
                             <button onClick={() => window.location.href = "./registrarse"} className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
+=======
+                            <Link to="/registrarse">
+                                <button className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
+                            </Link>
+>>>>>>> 734bb96b542f0335ecc504c0b9a265cea54e172a
                         </div>
                     </div>
                 </div>
