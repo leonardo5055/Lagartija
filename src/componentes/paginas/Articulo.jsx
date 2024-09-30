@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import "./estilos/articulo.css"
-
-import {
-    CardMeta,
-    CardHeader,
-    CardDescription,
-    CardContent,
-    Card,
-    Image,
-} from 'semantic-ui-react'
 import CardDescuento from '../estructura/CardDescuento';
 
+
 function Articulo() {
+    const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
+
+    const seleccionarImagen = (index) => {
+        setImagenSeleccionada(index); 
+    };
+
     return (
         <div>
             <div className='d-flex justify-content-center align-items-center m-5'>
@@ -30,10 +28,12 @@ function Articulo() {
                     <p className='fs-2'>$60.000</p>
                     <p className='text-naranja'>Metodos de pago</p>
                     <p>Colores:</p>
-                    <div className='d-flex gap-2'>
-                        <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
-                        <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
-                        <img className='border border-2 border-black' src={Sanlorenzo} width="70" />
+                    <div className='d-flex gap-3'>
+                        {[0, 1, 2, 3].map((index) => (
+                            <button key={index} className='border-0 p-0' onClick={() => seleccionarImagen(index)}>
+                                <img className={imagenSeleccionada === index ? 'bordeActivo' : 'bordeInactivo'} src={Sanlorenzo} width="70" alt={`Imagen ${index + 1}`}/>
+                            </button>
+                        ))}
                     </div>
                     <p>Talles</p>
                     <div className='d-flex gap-2'>

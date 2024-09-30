@@ -90,9 +90,6 @@ function Acceso() {
                         </div>
                         <div className='col'>
                             <button onClick={() => window.location.href = "./registrarse"} className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
-                            <Link to="/registrarse">
-                                <button className='button2 px-4 py-2 rounded-pill w-100 text-light border-0'>Crear cuenta</button>
-                            </Link>
                         </div>
                     </div>
                 </div>

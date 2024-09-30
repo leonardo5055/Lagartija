@@ -26,31 +26,43 @@ function Perfil() {
                     <form className='m-5 fw-bold row row-cols-2' action="">
                         <div className="mb-5">
                             <label for="usuario" className="form-label">NOMBRE</label>
-                            <input type="text" className="form-control cajaFor " id="usuario" placeholder="" />
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <input type="text" className="form-control cajaFor " id="usuario" placeholder="" />
+                            </div>
                         </div>
                         <div className="mb-3">
                             <label for="apellido" className="form-label">APELLIDO</label>
-                            <input type="text" className="form-control cajaFor" id="apellido" placeholder="" />
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <input type="text" className="form-control cajaFor" id="apellido" placeholder="" />
+                            </div>
                         </div>
                         <div className="mb-5">
                             <label for="usuario" className="form-label">EMAIL</label>
-                            <input type="email" className="form-control cajaFor" id="correo" placeholder="" />
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <input type="email" className="form-control cajaFor" id="correo" placeholder="" />
+                            </div>
                         </div>
                         <div className="mb-3">
                             <label for="telefono" className="form-label">TELEFONO</label>
-                            <input type="number" className="form-control cajaFor" id="telefono" placeholder="" />
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <input type="number" className="form-control cajaFor" id="telefono" placeholder="" />
+                            </div>
                         </div>
                         <div className="mb-5">
                             <label for="DNI" className="form-label">DNI</label>
-                            <input type="number" className="form-control cajaFor" id="DNI" placeholder="" />
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <input type="number" className="form-control cajaFor" id="DNI" placeholder="" />
+                            </div>
                         </div>
                         <div className="mb-3">
                             <label for="genero" className="form-label">GENERO</label>
-                            <input type="text" className="form-control cajaFor" id="genero" placeholder="" />
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <input type="text" className="form-control cajaFor" id="genero" placeholder="" />
+                            </div>
                         </div>
                     </form>
                     <div className='d-flex justify-content-end'>
-                        <button className='px-4 py-2 w-30 border-0 btnVerde'>Editar</button>
+                        <button className='px-4 py-2 w-30 border-0 btnVerde w-30 text-light border-0 btnRojo mt-5' data-bs-toggle="collapse" data-bs-target="#contenidoAdicional" aria-expanded="false" aria-controls="contenidoAdicional">Editar</button>
                     </div>
                 </div>
             </div>

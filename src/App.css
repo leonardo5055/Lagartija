@@ -33,3 +33,12 @@
 .tamano {
     width: 400px;
 }
+
+
+.bordeActivo {
+    border: 2px solid red;
+}
+
+.bordeInactivo {
+    border: 2px solid black;
+}

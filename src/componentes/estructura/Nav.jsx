@@ -75,7 +75,6 @@ function Nav() {
                                 </div>
                             </>
                         )}
-                        <li><Link to="/compras">Mis compras</Link></li>
                         <li><Link to="/carrito"><img src={Carrito} width="25px" alt="carrito" /></Link></li>
                     </ul>
                 </div>

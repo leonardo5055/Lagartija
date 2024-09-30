@@ -46,13 +46,15 @@ function DevolverProductos() {
                                 </tr>
                             </table>
                         </div>
-                        <hr className='linea'/>
+                        <hr className='linea' />
                         <div className='mt-3'>
                             <p>Motivo de devolucion</p>
-                            <input type="text" className="form-control cajaFor mt-3 " id="usuario" placeholder="" />
-                            <Link to="/">
-                                <button className='d-flex justify-content-end px-4 py-2 w-30 border-0 mt-3 btnVerde text-light'>Devolver producto</button>
-                            </Link>
+                            <input type="text" className="form-control cajaFor mt-4 " id="usuario" placeholder="" />
+                            <button className='d-flex justify-content-end px-4 py-2 w-30 border-0 mt-3 btnVerde text-light' data-bs-toggle="collapse" data-bs-target="#contenidoAdicional" aria-expanded="false" aria-controls="contenidoAdicional">Devolver producto</button>
+                            <div class="collapse mt-3" id="contenidoAdicional">
+                                <p>Peticion de devolucion enviada con exito</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>

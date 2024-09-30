@@ -31,7 +31,10 @@ function Carrito() {
                 <div className="m-3">
                     <h1>ENTREGA</h1>
                     <p>VEA TODAS LAS OPCIONES DE ENVÍO PARA SUS PRODUCTOS, INCLUYENDO LOS PLAZOS Y LOS PRECIONS DE ENVIÓ</p>
-                    <button className="px-4 py-2 rounded-pill w-30 text-light border-0 btnRojo m-3">Anadir Cupón de descuento </button>
+                    <button className="px-4 py-2 rounded-pill w-30 text-light border-0 btnRojo mt-5" data-bs-toggle="collapse" data-bs-target="#contenidoAdicional" aria-expanded="false" aria-controls="contenidoAdicional">Anadir codigo de descuento </button>
+                    <div class="collapse mt-3" id="contenidoAdicional">
+                        <input className="form-control me-2 my-2 w-25" type="text" placeholder="Codigo" />
+                    </div>
                 </div>
                 <div>
                     <div className="d-flex justify-content-between m-3">
