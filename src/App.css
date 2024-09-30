@@ -1,35 +1,35 @@
-.btnRojo{
+.btnRojo {
     background-color: #E76F51;
 }
 
-.btnVerde{
+.btnVerde {
     background-color: #2A9D8F;
 
 }
 
-.btnAmarillo{
+.btnAmarillo {
     background-color: #E9C46A;
 }
 
-.btnAzulOscuro{
+.btnAzulOscuro {
     background-color: #264653;
 }
 
-.linea{
+.linea {
     background-color: #E76F51;
     height: 5px;
     border: none;
     opacity: 1;
 }
 
-.cajaFor{
+.cajaFor {
     background-color: #D9D9D9;
 }
 
-.bordeRojo{
+.bordeRojo {
     border: 3px solid #E76F51;
 }
 
-.tamano{
+.tamano {
     width: 400px;
 }
