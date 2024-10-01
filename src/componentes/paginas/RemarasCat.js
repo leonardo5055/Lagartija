@@ -10,7 +10,7 @@ function RemarasCat() {
     // Función para obtener los productos de la API
     const obtenerProductos = async () => {
         try {
-            const response = await fetch('http://localhost:40588/api/productos');
+            const response = await fetch('https://lagartija-api-production.up.railway.app/api/productos');
             const data = await response.json();
             // Filtrar "remeras"
             const remeras = data.filter(producto => producto.categoria_id === 1);

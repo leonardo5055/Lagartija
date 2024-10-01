@@ -11,7 +11,7 @@ function BuzosCat() {
     useEffect(() => {
         const obtenerProductos = async () => {
             try {
-                const response = await axios.get('http://localhost:40588/api/productos');
+                const response = await axios.get('https://lagartija-api-production.up.railway.app/api/productos');
                 setProductos(response.data);
             } catch (error) {
                 console.error("Error al obtener los productos", error);

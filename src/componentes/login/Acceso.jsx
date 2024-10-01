@@ -15,7 +15,7 @@ function Acceso() {
     // Función para obtener usuarios
     const obtenerUsuarios = async () => {
         try {
-            const response = await axios.get('http://localhost:40588/api/usuarios');
+            const response = await axios.get('https://lagartija-api-production.up.railway.app/api/usuarios');
             setUsuarios(response.data);
         } catch (err) {
             setError(err.message);
