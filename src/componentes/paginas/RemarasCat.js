@@ -35,7 +35,23 @@ function RemarasCat() {
             <div className='mx-5'>
                 <div className='row'>
                     {cargando ? (
-                        <p className="text-center">Cargando productos...</p>
+                        // Esqueleto de carga para categoría de remeras
+                        [...Array(4)].map((_, index) => (
+                            <div className="col-md-3 mb-5" key={index}>
+                                <div className="card placeholder-glow" aria-hidden="true">
+                                    <div className="card-img-top placeholder" style={{ height: '200px' }}></div>
+                                    <div className="card-body">
+                                        <h5 className="card-title placeholder-glow">
+                                            <span className="placeholder col-6"></span>
+                                        </h5>
+                                        <p className="card-text placeholder-glow">
+                                            <span className="placeholder col-7"></span>
+                                            <span className="placeholder col-4"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
                     ) : (
                         productos.map((producto) => (
                             <div className='col-md-3 mb-5' key={producto.id_producto}>
