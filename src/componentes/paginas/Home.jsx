@@ -80,8 +80,8 @@ function Home() {
                 </div>
             </div>
 
-            <hr />
-            <h1 className='text-center'>Remeras más vendidas</h1>
+            <hr className='linea m-5'/>
+            <h1 className='text-center'>Buzos más vendidas</h1>
             <div className='mx-5'>
                 <div className='row'>
                     {cargando ? (

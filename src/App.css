@@ -40,5 +40,9 @@
 }
 
 .bordeInactivo {
-    border: 2px solid black;
+    border: 2px solid #ccc;
+}
+
+.btnActivo {
+    background-color: darkred;
 }

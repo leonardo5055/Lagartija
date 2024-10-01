@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sanlorenzo from "../../img/sanlorenzo.png";
 import Usuario from "../../img/usuario.png";
 import Casa from "../../img/casa.png";
 import Master from "../../img/mastercard.png";
 import Visa from "../../img/visa.png";
 import Mercado from "../../img/mercado-pago.png";
+import { Link } from 'react-router-dom';
 
 function FinalizarCompra() {
+    const [metodoSeleccionado, setMetodoSeleccionado] = useState(null);
+
+    const seleccionarMetodo = (metodo) => {
+        setMetodoSeleccionado(metodo);
+    };
+    const manejarClick = () => {
+        alert("Compra realizada");
+    };
     return (
         <div>
             <h1 className='m-3'>FINALIZAR COMPRA</h1>
@@ -46,12 +55,18 @@ function FinalizarCompra() {
                             <label for="vencimiento" className="form-label">VENCIMIENTO</label>
                             <input type="number" className="form-control tamano" id="vencimiento" placeholder="" />
                         </div>
-                        <div className="mb-3">
+                        <div>
                             <p>METODO DE PAGO</p>
                             <div className='d-flex gap-3'>
-                                <button><img src={Master} alt="" /></button>
-                                <button><img src={Visa} alt="" /></button>
-                                <button><img src={Mercado} alt="" /></button>
+                                <button type="button" onClick={() => seleccionarMetodo('Master')} className={`border-0 ${metodoSeleccionado === 'Master' ? 'btnActivo' : ''}`}>
+                                    <img src={Master} alt="MasterCard" />
+                                </button>
+                                <button type="button" onClick={() => seleccionarMetodo('Visa')} className={`border-0 ${metodoSeleccionado === 'Visa' ? 'btnActivo' : ''}`}>
+                                    <img src={Visa} alt="Visa" />
+                                </button>
+                                <button type="button" onClick={() => seleccionarMetodo('Mercado')} className={`border-0 ${metodoSeleccionado === 'Mercado' ? 'btnActivo' : ''}`}>
+                                    <img src={Mercado} alt="Mercado Pago" />
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -93,7 +108,7 @@ function FinalizarCompra() {
                             <p>60.000</p>
                         </div>
                         <div>
-                            <button className="px-4 py-2 rounded-pill w-30 text-light border-0 btnVerde">Finalizar compra</button>
+                            <Link to="/"><button className="px-4 py-2 rounded-pill w-30 text-light border-0 btnVerde" onClick={manejarClick}>Finalizar compra</button></Link>
                         </div>
                     </div>
                 </div>

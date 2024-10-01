@@ -64,7 +64,7 @@ function Nav() {
                         {isAuthenticated && usuario && (
                             <>
                                 <div className="btn-group">
-                                    <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" className="btn text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                         {usuario.correo}
                                     </button>
                                     <ul className="dropdown-menu">

@@ -8,13 +8,14 @@ function Articulo() {
     const [producto, setProducto] = useState(null);
     const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
     const [productos, setProductos] = useState([]);
+    const [talleSeleccionado, setTalleSeleccionado] = useState(null); // Estado para el talle seleccionado
 
     const [contador, setContador] = useState(1); // Inicializa el contador en 1
 
     const incrementar = () => {
         if (contador < producto.stock) {
             setContador(contador + 1);
-            
+
         }
     };
 
@@ -48,6 +49,10 @@ function Articulo() {
         setImagenSeleccionada(index);
     };
 
+    const seleccionarTalle = (talle) => {
+        setTalleSeleccionado(talle); // Actualiza el talle seleccionado
+    };
+
     return (
         <div>
             <div className='d-flex justify-content-center align-items-center m-5'>
@@ -69,12 +74,24 @@ function Articulo() {
                             </button>
                         ))}
                     </div>
-                    <p>Talles</p>
-                    <div className='d-flex gap-2'>
-                        <button className='px-4 py-2 rounded-pill text-light border-0 btnRojo'>L</button>
-                        <button className='px-4 py-2 rounded-pill text-light border-0 btnRojo'>XL</button>
-                        <button className='px-4 py-2 rounded-pill text-light border-0 btnRojo'>XXL</button>
+                    <div className='d-flex gap-3'>
+                        {[0].map((index) => (
+                            <div key={index} className='text-center'>
+                                <div className='d-flex gap-1 justify-content-center'>
+                                    {['L', 'XL', 'XXL'].map((talle) => (
+                                        <button
+                                            key={talle}
+                                            className={`px-4 py-2 rounded-pill border-0 ${talleSeleccionado === talle ? 'btnActivo' : 'btnRojo'} text-light`}
+                                            onClick={() => seleccionarTalle(talle)}>
+                                            {talle}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </div>
+
+
                     <div className='d-flex align-items-center gap-5'>
                         <div>
                             <p>Cantidad</p>
