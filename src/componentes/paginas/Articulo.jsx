@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import "./estilos/articulo.css";
 import CardDescuento from '../estructura/CardDescuento';
 
@@ -8,6 +8,21 @@ function Articulo() {
     const [producto, setProducto] = useState(null);
     const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
     const [productos, setProductos] = useState([]);
+
+    const [contador, setContador] = useState(1); // Inicializa el contador en 1
+
+    const incrementar = () => {
+        if (contador < producto.stock) {
+            setContador(contador + 1);
+            
+        }
+    };
+
+    const decrementar = () => {
+        if (contador > 1) {
+            setContador(contador - 1);
+        }
+    };
 
     useEffect(() => {
         // Lógica para obtener el producto de la API según el 'slug'
@@ -36,11 +51,11 @@ function Articulo() {
     return (
         <div>
             <div className='d-flex justify-content-center align-items-center m-5'>
-                <div className='d-flex gap-4 flex-column'>
+                <div className='d-flex gap-4 flex-column g-3'>
                     <img className='border border-2 border-black' src={producto.imagen_url} alt='foto' width="70" />
                 </div>
                 <div>
-                    <img src={producto.imagen_url} width="500" alt='foto' />
+                    <img src={producto.imagen_url} height="500" alt='foto' />
                 </div>
                 <div className='d-flex flex-column gap-3'>
                     <h1>{producto.nombre}</h1>
@@ -66,13 +81,13 @@ function Articulo() {
                             <p>stock disponibles: {producto.stock}</p>
                         </div>
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">-</button>
-                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">1</button>
-                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">+</button>
+                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light" onClick={decrementar}>-</button>
+                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light">{contador}</button>
+                            <button type="button" class="px-4 py-2 border-0 btnVerde text-light" onClick={incrementar}>+</button>
                         </div>
                     </div>
-                    <button type="button" class="px-4 py-2 border-0 rounded-pill btnAzulOscuro text-light">Comprar ahora</button>
-                    <button type="button" class="px-4 py-2 border-0 rounded-pill btnAmarillo text-light">Añadir al carrito</button>
+                    <Link to="/carrito"><button type="button" class="px-4 py-2 border-0 rounded-pill btnAzulOscuro text-light w-50">Comprar ahora</button></Link>
+                    <button type="button" class="px-4 py-2 border-0 rounded-pill btnAmarillo text-light w-50">Añadir al carrito</button>
                 </div>
             </div>
             <div className='m-5'>

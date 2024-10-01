@@ -16,6 +16,9 @@ import FinalizarCompra from './componentes/paginas/FinalizarCompra.jsx';
 import Perfil from './componentes/paginas/Perfil.jsx';
 import Pedidos from './componentes/paginas/Pedidos.jsx';
 import DevolverProductos from "./componentes/paginas/DevolverProductos.jsx";
+import FormularioPagina from './componentes/FormularioPagina.jsx';
+import TerminosyCondiciones from './componentes/TerminosyCondiciones.jsx';
+import PoliticaDeDevoluciones from './componentes/PoliticaDeDevolucion.jsx';
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
         <Route path="/pedidos" element={<Pedidos />} />
         <Route path="/devolver-productos" element={<DevolverProductos />} />
         <Route path="/articulo/:slug" element={<Articulo />} />
+        <Route path="/contacto" element={<FormularioPagina />} />
+        <Route path="/terminosycondiciones" element={<TerminosyCondiciones />} />
+        <Route path="/politicadedevolucion" element={<PoliticaDeDevoluciones />} />
       </Routes>
       <Footer />
     </Router>
