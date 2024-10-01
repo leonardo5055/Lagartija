@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Importa useNavigate
+import { Link, useNavigate } from 'react-router-dom'; // Importar useNavigate
 import "./estilo/nav.css";
 import Logo from "../../img/logo-lagartija.png";
 import Carrito from "../../img/carrito-de-compras.png";
 
 function Nav() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [usuario, setUsuario] = useState(null); // Almacenar datos del usuario autenticado
+    const [usuario, setUsuario] = useState(null);
+    const [busqueda, setBusqueda] = useState(''); // Estado para el término de búsqueda
+    const navigate = useNavigate(); // Hook para la navegación
 
     // useEffect para verificar si el usuario está autenticado
     useEffect(() => {
@@ -31,6 +33,20 @@ function Nav() {
         setUsuario(null); // Borrar la información del usuario
     };
 
+    // Función para manejar la búsqueda
+    const handleBusqueda = (e) => {
+        setBusqueda(e.target.value);
+    };
+
+    // Función para enviar la búsqueda
+    const enviarBusqueda = (e) => {
+        e.preventDefault();
+        if (busqueda.trim()) {
+            // Redirigir a la página de resultados de búsqueda
+            navigate(`/buscar?query=${busqueda}`);
+        }
+    };
+
     return (
         <header>
             <nav className='h-auto d-flex justify-content-between align-items-center text-light'>
@@ -39,9 +55,16 @@ function Nav() {
                 </Link>
 
                 <div className="d-flex flex-column w-50 m-2">
-                    <div className='mb-3'>
-                        <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                    </div>
+                    <form className='mb-3' onSubmit={enviarBusqueda}>
+                        <input
+                            className="form-control me-2"
+                            type="search"
+                            placeholder="Buscar"
+                            aria-label="Search"
+                            value={busqueda}
+                            onChange={handleBusqueda} // Actualizar el valor de búsqueda
+                        />
+                    </form>
                     <div>
                         <ul className='d-flex list-unstyled flex-row gap-4 justify-content-center'>
                             <li><Link to="/remeras">Remeras</Link></li>

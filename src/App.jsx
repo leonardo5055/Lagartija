@@ -16,6 +16,7 @@ import FinalizarCompra from './componentes/paginas/FinalizarCompra.jsx';
 import Perfil from './componentes/paginas/Perfil.jsx';
 import Pedidos from './componentes/paginas/Pedidos.jsx';
 import DevolverProductos from "./componentes/paginas/DevolverProductos.jsx";
+import Buscar from './componentes/Buscar.jsx';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/pedidos" element={<Pedidos />} />
         <Route path="/devolver-productos" element={<DevolverProductos />} />
         <Route path="/articulo/:slug" element={<Articulo />} />
+        <Route path="/buscar" element={<Buscar />} />
       </Routes>
       <Footer />
     </Router>
