@@ -23,7 +23,6 @@ function App() {
       <Nav></Nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/articulo" element={<Articulo />} />
         <Route path="/acceso" element={<Acceso />} />
         <Route path="/registrarse" element={<Registrarse />} />
         <Route path="/carrito" element={<Carrito />} />
@@ -36,6 +35,7 @@ function App() {
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/pedidos" element={<Pedidos />} />
         <Route path="/devolver-productos" element={<DevolverProductos />} />
+        <Route path="/articulo/:slug" element={<Articulo />} />
       </Routes>
       <Footer />
     </Router>
