@@ -26,9 +26,9 @@ function Footer() {
         <div>
           <h5>Nuestra tienda</h5>
           <ul>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Politicas</a></li>
-            <li><a href="#">Envios y devoluciones</a></li>
+            <li><Link to="/contacto">Contacto</Link></li>
+            <li><Link to="/terminosycondiciones">Terminos y condiciones</Link></li>
+            <li><Link to="/politicadedevolucion">Envios y devoluciones</Link></li>
           </ul>
         </div>
       </div>

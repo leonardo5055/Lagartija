@@ -14,8 +14,8 @@ function CardDescuento({ imagen, nombre, precioOriginal, precioDescuento }) {
 
     return (
         <Link to={`/articulo/${crearSlug(nombre)}`}> {/* Usamos el nombre sanitizado en la URL */}
-            <Card role="button" className='text-black'>
-                <Image src={imagen} width="250px" wrapped ui={false} />
+            <Card role="button" className='text-black card-uniform'>
+                <Image src={imagen} height="250px" wrapped ui={false} className='text-center' />
                 <CardContent>
                     <div className='mx-3 mb-3'>
                         <CardHeader>{nombre}</CardHeader>

@@ -16,7 +16,13 @@ import FinalizarCompra from './componentes/paginas/FinalizarCompra.jsx';
 import Perfil from './componentes/paginas/Perfil.jsx';
 import Pedidos from './componentes/paginas/Pedidos.jsx';
 import DevolverProductos from "./componentes/paginas/DevolverProductos.jsx";
+<<<<<<< HEAD
 import Buscar from './componentes/Buscar.jsx';
+=======
+import FormularioPagina from './componentes/FormularioPagina.jsx';
+import TerminosyCondiciones from './componentes/TerminosyCondiciones.jsx';
+import PoliticaDeDevoluciones from './componentes/PoliticaDeDevolucion.jsx';
+>>>>>>> 60faf7aa7da97817a6a14b8df93233e1a80c4536
 
 function App() {
   return (
@@ -37,7 +43,13 @@ function App() {
         <Route path="/pedidos" element={<Pedidos />} />
         <Route path="/devolver-productos" element={<DevolverProductos />} />
         <Route path="/articulo/:slug" element={<Articulo />} />
+<<<<<<< HEAD
         <Route path="/buscar" element={<Buscar />} />
+=======
+        <Route path="/contacto" element={<FormularioPagina />} />
+        <Route path="/terminosycondiciones" element={<TerminosyCondiciones />} />
+        <Route path="/politicadedevolucion" element={<PoliticaDeDevoluciones />} />
+>>>>>>> 60faf7aa7da97817a6a14b8df93233e1a80c4536
       </Routes>
       <Footer />
     </Router>
